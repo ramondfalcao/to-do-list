@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    text-align: center;
+    margin-top: 10px;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;    
+}
+
+.form-item{
+    margin-top: 20px;
+}
+
+.lista{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#lista-tarefas{
+    display: inline-block;
+}
+
+li{
+    margin-top: 8px;
+}
