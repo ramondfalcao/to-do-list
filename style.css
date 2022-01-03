@@ -4,30 +4,30 @@
     box-sizing: border-box;
 }
 
+body{
+    text-align: center;
+}
 
 header{
-    text-align: center;
-    margin-top: 10px;
-}
-
-form {
-    text-align: center;
-    margin-top: 20px;    
-}
-
-.form-item{
     margin-top: 20px;
 }
 
-.lista{
-    text-align: center;
-    margin-top: 40px;
-}
-
-#lista-tarefas{
+main {
+    margin-top: 30px;
     display: inline-block;
+}
+ol{
+    margin-top: 20px;
 }
 
 li{
-    margin-top: 8px;
+    padding-right: 220px;
+}
+
+.selected{
+    background-color: rgb(128, 128, 128);
+}
+
+.completed{
+    text-decoration: line-through solid rgb(0, 0, 0);
 }

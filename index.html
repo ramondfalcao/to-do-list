@@ -10,17 +10,19 @@
 <body>
     <header>
         <h1>Minha Lista de Tarefas</h1>
+        <p class="form-item" id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
     </header>
     <main>
-        <form action="">
-            <p class="form-item" id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
-            <input class="form-item" id="texto-tarefa" name="tarefa" type="text">
-            <button class="form-item" type="button" id="criar-tarefa" value="enviar">Adcionar Tarefa</button>
-        </form>
-        <section class="lista">
-            <ol id="lista-tarefas">
+        <section class="box">
+            <form action="">
+                <input class="form-item" id="texto-tarefa" name="tarefa" type="text">
+                <button class="form-item" type="button" id="criar-tarefa" value="enviar">Adcionar Tarefa</button>
+            </form>
+            <section class="lista">
+                <ol id="lista-tarefas">
 
-            </ol>
+                </ol>
+            </section>
         </section>
     </main>
     <script src="/script.js"></script>
