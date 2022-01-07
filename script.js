@@ -37,5 +37,20 @@
         }
     })
 
+    let buttonApagaTudo = document.querySelector('#apaga-tudo') 
 
+    buttonApagaTudo.addEventListener('click', function(){
+        document.location.reload(true);
+    })
+
+    let buttonRemoveFinalizados = document.querySelector('#remover-finalizados')
+
+
+    buttonRemoveFinalizados.addEventListener('click', function(){
+        let itemFinalizado = document.querySelectorAll('.completed')
+        for (let i = 0; i < itemFinalizado.length; i++) {
+          let task = itemFinalizado[i]
+          task.remove();
+        }
+    })
     
