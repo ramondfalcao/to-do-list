@@ -1,5 +1,5 @@
 {
-  "homepage": "https://yourgithubname.github.io/your-app-name",
+  "homepage": "https://ramondfalcao.github.io/to-do-list",
   "devDependencies": {
     "cypress": "4.0.2",
     "cypress-multi-reporters": "1.2.4",
