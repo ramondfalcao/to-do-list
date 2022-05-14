@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do List</title>
-    <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do List</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="shortcut icon" href="./assets/checklist.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&family=Poppins&family=Roboto+Mono:ital,wght@0,400;1,200&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f138908334.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <main class="main">
+      <section class="title-section">
         <h1>Minha Lista de Tarefas</h1>
         <p class="form-item" id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
-    </header>
-    <main>
-        <section class="box">
-            <form action="">
-                <input class="form-item" id="texto-tarefa" name="tarefa" type="text">
-                <button class="form-item" type="button" id="criar-tarefa" value="enviar">Adcionar Tarefa</button>
-            </form>
-            <section class="lista">
-                <ol id="lista-tarefas">
-
-                </ol>
-            </section>
-            <button id="apaga-tudo">Limpar</button>
-            <button id="remover-finalizados">Remover finalizados</button>
+      </section>
+      <section class="section-to-do-list">
+        <form class="input-task" action="">
+          <input class="form-item" id="texto-tarefa" name="tarefa" type="text">
+          <button class="form-item" type="button" id="criar-tarefa" value="enviar"><i class="fa-solid fa-check"></i></button>
+        </form>
+        <section class="lista">
+          <ol id="lista-tarefas">
+          </ol>
         </section>
+        <div class="buttons-container">
+          <button id="apaga-tudo"><i class="fa-solid fa-trash-can"></i></button>
+          <button id="remover-finalizados">Removed Checks</button>
+        </div>
+      </section>
     </main>
     <script src="/script.js"></script>
 </body>
