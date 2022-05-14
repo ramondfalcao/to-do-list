@@ -1,56 +1,55 @@
+/* eslint-disable  */
+const input = document.querySelector('#texto-tarefa');
 
-    const input = document.querySelector('#texto-tarefa');
+// console.log(localStorage('texto', 'input'))
+const button = document.querySelector('#criar-tarefa');
 
-    // console.log(localStorage('texto', 'input'))
-    const button = document.querySelector('#criar-tarefa');
+button.addEventListener('click', () => {
+  const texto = input.value;
+  const item = document.createElement('li');
+  item.innerText = texto;
+  document.querySelector('#lista-tarefas').appendChild(item);
+  item.className = 'item';
+  input.value = '';
+});
 
-    button.addEventListener('click' , function(){
-        const texto = input.value;        
-        let item = document.createElement('li')
-        item.innerText = texto
-        document.querySelector('#lista-tarefas').appendChild(item)   
-        item.className = "item"
-        input.value = ''
-       
-    });
+const gray = 'rgb(128, 128, 128)';
 
-    const gray = "rgb(128, 128, 128)"
+const selecionado = '';
 
-    let selecionado = ''
-    
-    let ol = document.querySelector('#lista-tarefas')
-    
-    ol.addEventListener('click', function(event){
-        let item = event.target;     
-        if (document.querySelector('.selected')) {
-            document.querySelector('.selected').classList.remove('selected')
-        } 
-        item.classList.add('selected')
-    })
+const ol = document.querySelector('#lista-tarefas');
 
-    ol.addEventListener('dblclick', function(event){
-        let item = event.target;     
-        if (item.classList.contains('completed')) {
-           item.classList.remove('completed')
-        } else {
-            item.classList.add('completed')
-        }
-    })
+ol.addEventListener('click', (event) => {
+  const item = event.target;
+  if (document.querySelector('.selected')) {
+    document.querySelector('.selected').classList.remove('selected');
+  }
+  item.classList.add('selected');
+});
 
-    let buttonApagaTudo = document.querySelector('#apaga-tudo') 
+ol.addEventListener('dblclick', (event) => {
+  const item = event.target;
+  if (item.classList.contains('completed')) {
+    item.classList.remove('completed');
+  } else {
+    item.classList.add('completed');
+  }
+});
 
-    buttonApagaTudo.addEventListener('click', function(){
-        document.location.reload(true);
-    })
+const buttonApagaTudo = document.querySelector('#apaga-tudo');
 
-    let buttonRemoveFinalizados = document.querySelector('#remover-finalizados')
+buttonApagaTudo.addEventListener('click', () => {
+  const list = document.querySelector('#lista-tarefas').children;
+  const array = [...list];
+  array.forEach((item) => item.remove());
+});
 
+const buttonRemoveFinalizados = document.querySelector('#remover-finalizados');
 
-    buttonRemoveFinalizados.addEventListener('click', function(){
-        let itemFinalizado = document.querySelectorAll('.completed')
-        for (let i = 0; i < itemFinalizado.length; i++) {
-          let task = itemFinalizado[i]
-          task.remove();
-        }
-    })
-    
+buttonRemoveFinalizados.addEventListener('click', () => {
+  const itemFinalizado = document.querySelectorAll('.completed');
+  for (let i = 0; i < itemFinalizado.length; i++) {
+    const task = itemFinalizado[i];
+    task.remove();
+  }
+});
