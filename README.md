@@ -20,7 +20,7 @@ Mobile First é um conceito aplicado em projetos web onde o foco inicial da arqu
 
 desenvolvimento é direcionado aos dispositivos móveis.
 
-![img](img-size-mobile.svg)
+![img](mobile.svg)
 
 
 ## 🛠 Tecnologias
@@ -31,3 +31,16 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Css](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Font-Awesome](https://fontawesome.com/)
+
+## Instruções para abrir a aplicação
+
+[Link Da Aplicação](https://ramondfalcao.github.io/to-do-list/)
+
+1. Clone o repositório
+  * `git clone git@github.com:ramondfalcao/to-do-list.git`
+  * Entre na pasta do repositório que você acabou de clonar:
+    * `cd to-do-list`
+
+2. Abra o arquivo `index.html`
+  * (uma nova página deve abrir no seu navegador)
+---
