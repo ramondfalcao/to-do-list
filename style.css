@@ -23,6 +23,7 @@
 
 .section-to-do-list {
   width: 90%;
+  margin-top: 15px;
   min-height: 20vh;
   background: rgba(255, 255, 255, 0.22);
   border-radius: 16px;
@@ -34,6 +35,7 @@
 
 .input-task {
   width: 100%;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -55,10 +57,20 @@
 .item {
   list-style: none;
   margin-left: 10px;
+  margin-bottom: 4px;
 }
 
 #criar-tarefa {
   font-size: 10px;
+}
+
+.lista {
+  width: 80%;
+  /* text-align: center; */
+}
+
+.list {
+  padding: 10px;
 }
 
 
